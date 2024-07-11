@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tools_white">#FFFFFF</color>
+    <color name="tools_toast_bg">#80000000</color>
+</resources>
