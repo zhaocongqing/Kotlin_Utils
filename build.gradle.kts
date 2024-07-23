@@ -1,7 +1,11 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+//    `maven-publish`
 }
+
+//group = "com.learning"
+//version = "1.0.0"
 
 android {
     namespace = "com.learning.tools"
@@ -9,7 +13,6 @@ android {
 
     defaultConfig {
         minSdk = 23
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -31,6 +34,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    //发布maven
+//    publishing {
+//        singleVariant("release") {
+//            //发布源码
+//            withSourcesJar()
+//        }
+//    }
 }
 
 dependencies {
@@ -39,3 +50,9 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.activity:activity-ktx:1.9.0")
 }
+
+//publishing {
+//    publications {
+//
+//    }
+//}
